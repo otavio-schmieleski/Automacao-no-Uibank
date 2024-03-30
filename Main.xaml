@@ -1,0 +1,837 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:Annotation.AnnotationText="UPTF00000088eyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9" sap:VirtualizedContainerService.HintSize="1322,5543" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Numerics</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.MetadataLoadContext</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="ShouldExpandAll">False</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1332,5478" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="TabelaContas" />
+      <Variable x:TypeArguments="x:Int32" Name="contador" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="1270,318" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="Contas.xlsx">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[TabelaContas]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="354,83" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="CC">
+              <ui:ExcelReadRange.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ExcelReadRange.Range>
+            </ui:ExcelReadRange>
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+    <uix:NApplicationCard DisplayName="Use Browser Chrome: Banco Ui" sap:VirtualizedContainerService.HintSize="1270,5072" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="1236,4831" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Assign sap:VirtualizedContainerService.HintSize="1174,123" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Int32">[contador]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Int32">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[TabelaContas]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1174,4621" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow.Body>
+                <ActivityAction x:TypeArguments="sd:DataRow">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CC" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="1140,4430" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Boolean" Name="Excessao" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Assign sap:VirtualizedContainerService.HintSize="1078,123" sap2010:WorkflowViewState.IdRef="Assign_2">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:Int32">[contador]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:Int32">[contador+1]</InArgument>
+                      </Assign.Value>
+                    </Assign>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Email Address'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1078,259" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Text="[CC(0).ToString()+&quot;@gmail.com&quot;]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="705, 503, 430, 57" CvType="InputBox" DesignTimeRectangle="707, 504, 426, 54" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='email' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='email' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' aaname='Email Address' /&gt;" Guid="c31c1631-1f96-4432-a9bc-9286fa3e61ae" InformativeScreenshot="26d5def9b7f6ee6b39e65931f0ea8ef7.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="706, 487, 78, 11" CvTextArgument="Email Address" CvType="Text" DesignTimeRectangle="707, 485, 77, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='uibank-label' aaname='Email Address' check:innerText='Email Address' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1078,259" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Text="[CC(1).ToString()]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="705, 581, 431, 58" CvType="InputBox" DesignTimeRectangle="707, 582, 426, 54" DesignTimeScaleFactor="1" ElementType="InputBoxPassword" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='form-control uibank-input ng-untouched ng-pristine ng-valid' aaname='Password' /&gt;" Guid="453be180-952d-4385-80bf-1783434274ad" InformativeScreenshot="04cabfab07cc159560634ab7311d2e5f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="706, 565, 54, 11" CvTextArgument="Password" CvType="Text" DesignTimeRectangle="707, 563, 52, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Password' tag='LABEL' type='' class='uibank-label' check:innerText='Password' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'First Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1078,259" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Text="[CC(2).ToString()]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="509, 798, 400, 57" CvType="InputBox" DesignTimeRectangle="511, 799, 397, 54" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='firstName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='firstName' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' aaname='First Name' /&gt;" Guid="a0d24112-0b18-49f5-9f9c-a8285d08de4e" InformativeScreenshot="1f2e3d4fe034dac92f3c6f08435d4bec.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="510, 782, 60, 11" CvTextArgument="First Name" CvType="Text" DesignTimeRectangle="511, 780, 59, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='First Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='First Name' tag='LABEL' type='' class='uibank-label' check:innerText='First Name' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Last Name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1078,259" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Text="[CC(4).ToString()]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="931, 798, 400, 57" CvType="InputBox" DesignTimeRectangle="933, 799, 397, 54" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='lastName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='lastName' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' aaname='Last Name' /&gt;" Guid="12a40749-0c35-4fca-bee9-7a9257c72216" InformativeScreenshot="31fb143c78b3374d4798ef7f3975a3c9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="932, 782, 59, 11" CvTextArgument="Last Name" CvType="Text" DesignTimeRectangle="933, 780, 58, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Last Name' tag='LABEL' type='' class='uibank-label' check:innerText='Last Name' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Middle Name Or Initial'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1078,259" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Text="[CC(3).ToString()]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="510, 696, 400, 56" CvType="InputBox" DesignTimeRectangle="511, 696, 397, 54" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='middleName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='middleName' tag='INPUT' type='text' class='form-control uibank-input ng-untouched ng-pristine ng-valid' aaname='Middle Name Or Initial' /&gt;" Guid="6b1b2310-27d0-47aa-9276-538e9905e4b8" InformativeScreenshot="c83dd2bdcdc8114401a2adc0906ec52b.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="510, 679, 122, 11" CvTextArgument="Middle Name Or Initial" CvType="Text" DesignTimeRectangle="511, 677, 121, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Middle Name Or Initial' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Middle Name Or Initial' tag='LABEL' type='' class='uibank-label' check:innerText='Middle Name Or Initial' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <ui:IfElseIf DisplayName="Verificando Sexo" sap:VirtualizedContainerService.HintSize="1078,93" sap2010:WorkflowViewState.IdRef="IfElseIf_1">
+                      <ui:IfElseIf.ConditionBlocks>
+                        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                          <ui:IfElseIfBlock BlockType="If" Condition="[CC(5).ToString().Equals(&quot;M&quot;)]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_1">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Sex'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="Male" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="3">
+                                      <x:String>Select your sex</x:String>
+                                      <x:String>Male</x:String>
+                                      <x:String>Female</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="931, 694, 401, 57" CvType="InputBox" DesignTimeRectangle="933, 696, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='sex' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sex' tag='SELECT' type='text' class='form-control uibank-input ng-dirty ng-valid ng-touched' aaname='' /&gt;" Guid="65b6b909-7a84-46ff-b09c-1fcd6144e71b" InformativeScreenshot="f3c8030eb57b2b55676d5b5b954b83e2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="932, 679, 20, 11" CvTextArgument="Sex" CvType="Text" DesignTimeRectangle="933, 677, 18, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sex' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sex' tag='LABEL' type='' class='uibank-label' check:innerText='Sex' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                          <ui:IfElseIfBlock BlockType="Else" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_2">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Sex'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="Female" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="3">
+                                      <x:String>Select your sex</x:String>
+                                      <x:String>Male</x:String>
+                                      <x:String>Female</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="931, 694, 401, 57" CvType="InputBox" DesignTimeRectangle="933, 696, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='sex' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='sex' tag='SELECT' type='text' class='form-control uibank-input ng-dirty ng-valid ng-touched' aaname='' /&gt;" Guid="65b6b909-7a84-46ff-b09c-1fcd6144e71b" InformativeScreenshot="f3c8030eb57b2b55676d5b5b954b83e2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="932, 679, 20, 11" CvTextArgument="Sex" CvType="Text" DesignTimeRectangle="933, 677, 18, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Sex' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Sex' tag='LABEL' type='' class='uibank-label' check:innerText='Sex' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                        </sc:BindingList>
+                      </ui:IfElseIf.ConditionBlocks>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:IfElseIf>
+                    <ui:IfElseIf DisplayName="Verificando Titulo" sap:VirtualizedContainerService.HintSize="1078,93" sap2010:WorkflowViewState.IdRef="IfElseIf_2">
+                      <ui:IfElseIf.ConditionBlocks>
+                        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                          <ui:IfElseIfBlock BlockType="If" Condition="[CC(6).ToString().Equals(&quot;Senhor&quot;)]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_3">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Title'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NSelectItem_6" Item="Mr" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                                      <x:String>Select your title</x:String>
+                                      <x:String>Ms</x:String>
+                                      <x:String>Mrs</x:String>
+                                      <x:String>Mr</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="508, 760, 403, 58" CvType="InputBox" DesignTimeRectangle="511, 762, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='title' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='title' tag='SELECT' type='text' class='form-control uibank-input ng-touched ng-dirty ng-valid' aaname='Title' /&gt;" Guid="6ee63937-d932-4f05-b16f-b6f01f39f8dc" InformativeScreenshot="5c2f9cbeb786f3ca61a67043b8f4ef4e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="509, 745, 25, 11" CvTextArgument="Title" CvType="Text" DesignTimeRectangle="511, 743, 23, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Title' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Title' tag='LABEL' type='' class='uibank-label' check:innerText='Title' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[CC(6).ToString().Equals(&quot;Senhora&quot;)]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_4">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Title'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="Mrs" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                                      <x:String>Select your title</x:String>
+                                      <x:String>Ms</x:String>
+                                      <x:String>Mrs</x:String>
+                                      <x:String>Mr</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="508, 760, 403, 58" CvType="InputBox" DesignTimeRectangle="511, 762, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='title' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='title' tag='SELECT' type='text' class='form-control uibank-input ng-touched ng-dirty ng-valid' aaname='Title' /&gt;" Guid="6ee63937-d932-4f05-b16f-b6f01f39f8dc" InformativeScreenshot="5c2f9cbeb786f3ca61a67043b8f4ef4e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="509, 745, 25, 11" CvTextArgument="Title" CvType="Text" DesignTimeRectangle="511, 743, 23, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Title' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Title' tag='LABEL' type='' class='uibank-label' check:innerText='Title' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                          <ui:IfElseIfBlock BlockType="Else" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_5">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Title'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="Ms" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                                      <x:String>Select your title</x:String>
+                                      <x:String>Ms</x:String>
+                                      <x:String>Mrs</x:String>
+                                      <x:String>Mr</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="508, 760, 403, 58" CvType="InputBox" DesignTimeRectangle="511, 762, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='title' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='title' tag='SELECT' type='text' class='form-control uibank-input ng-touched ng-dirty ng-valid' aaname='Title' /&gt;" Guid="6ee63937-d932-4f05-b16f-b6f01f39f8dc" InformativeScreenshot="5c2f9cbeb786f3ca61a67043b8f4ef4e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="509, 745, 25, 11" CvTextArgument="Title" CvType="Text" DesignTimeRectangle="511, 743, 23, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Title' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Title' tag='LABEL' type='' class='uibank-label' check:innerText='Title' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                        </sc:BindingList>
+                      </ui:IfElseIf.ConditionBlocks>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:IfElseIf>
+                    <ui:IfElseIf DisplayName="Verificando Situacao de Empregado" sap:VirtualizedContainerService.HintSize="1078,93" sap2010:WorkflowViewState.IdRef="IfElseIf_3">
+                      <ui:IfElseIf.ConditionBlocks>
+                        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                          <ui:IfElseIfBlock BlockType="If" Condition="[CC(7).ToString().Equals(&quot;Integral&quot;)]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_6">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Employment Status'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NSelectItem_9" Item="Full-time" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                                      <x:String>Select your employment status</x:String>
+                                      <x:String>Full-time</x:String>
+                                      <x:String>Part-time</x:String>
+                                      <x:String>Unemployed</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="931, 788, 400, 56" CvType="InputBox" DesignTimeRectangle="933, 789, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='employmentStatus' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='employmentStatus' tag='SELECT' type='text' class='form-control uibank-input select-color ng-pristine ng-invalid ng-touched' aaname='' /&gt;" Guid="9ac6f339-82d8-4e4c-92fc-fa69fb5286fb" InformativeScreenshot="281d48cf4f2d5bbcf927def3cd14e388.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="932, 772, 107, 14" CvTextArgument="Employment Status" CvType="Text" DesignTimeRectangle="933, 770, 106, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' type='' class='uibank-label' check:innerText='Employment Status' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[CC(7).ToString().Equals(&quot;Parcial&quot;)]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_7">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Employment Status'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NSelectItem_12" Item="Part-time" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                                      <x:String>Select your employment status</x:String>
+                                      <x:String>Full-time</x:String>
+                                      <x:String>Part-time</x:String>
+                                      <x:String>Unemployed</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="931, 788, 400, 56" CvType="InputBox" DesignTimeRectangle="933, 789, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='employmentStatus' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='employmentStatus' tag='SELECT' type='text' class='form-control uibank-input select-color ng-pristine ng-invalid ng-touched' aaname='' /&gt;" Guid="9ac6f339-82d8-4e4c-92fc-fa69fb5286fb" InformativeScreenshot="281d48cf4f2d5bbcf927def3cd14e388.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="932, 772, 107, 14" CvTextArgument="Employment Status" CvType="Text" DesignTimeRectangle="933, 770, 106, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' type='' class='uibank-label' check:innerText='Employment Status' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                          <ui:IfElseIfBlock BlockType="Else" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_8">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,265" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Employment Status'" sap:VirtualizedContainerService.HintSize="354,180" sap2010:WorkflowViewState.IdRef="NSelectItem_13" Item="Unemployed" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="4">
+                                      <x:String>Select your employment status</x:String>
+                                      <x:String>Full-time</x:String>
+                                      <x:String>Part-time</x:String>
+                                      <x:String>Unemployed</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="931, 788, 400, 56" CvType="InputBox" DesignTimeRectangle="933, 789, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='employmentStatus' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='employmentStatus' tag='SELECT' type='text' class='form-control uibank-input select-color ng-pristine ng-invalid ng-touched' aaname='' /&gt;" Guid="9ac6f339-82d8-4e4c-92fc-fa69fb5286fb" InformativeScreenshot="281d48cf4f2d5bbcf927def3cd14e388.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="932, 772, 107, 14" CvTextArgument="Employment Status" CvType="Text" DesignTimeRectangle="933, 770, 106, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Employment Status' tag='LABEL' type='' class='uibank-label' check:innerText='Employment Status' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                        </sc:BindingList>
+                      </ui:IfElseIf.ConditionBlocks>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:IfElseIf>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Date of birth (MM/DD/YY)'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1078,259" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Text="[CC(8).ToString]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="509, 760, 401, 58" CvType="InputBox" DesignTimeRectangle="511, 762, 397, 54" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='age' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='age' tag='INPUT' type='text' class='form-control uibank-input ng-valid ng-dirty ng-touched' aaname='Date of birth (MM/DD/YY)' /&gt;" Guid="3f76538a-f514-420e-b8c8-19d1ff6e427b" InformativeScreenshot="dd04a5c6c467c4f451b7d9559b651ae3.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="510, 743, 138, 15" CvTextArgument="Date of birth (MM/DD/YY)" CvType="Text" DesignTimeRectangle="511, 743, 137, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Date of birth ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Date of birth ' tag='LABEL' type='' class='uibank-label' check:innerText='Date of birth (MM/DD/YY)' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <ui:IfElseIf DisplayName="Verificando estado civil" sap:VirtualizedContainerService.HintSize="1078,93" sap2010:WorkflowViewState.IdRef="IfElseIf_4">
+                      <ui:IfElseIf.ConditionBlocks>
+                        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                          <ui:IfElseIfBlock BlockType="If" Condition="[CC(9).ToString().Equals(&quot;Solteiro&quot;)]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_9">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,266" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Marital Status'" sap:VirtualizedContainerService.HintSize="354,181" sap2010:WorkflowViewState.IdRef="NSelectItem_15" Item="Single" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="5">
+                                      <x:String>Select your marital status</x:String>
+                                      <x:String>Single</x:String>
+                                      <x:String>Married</x:String>
+                                      <x:String>Divorced</x:String>
+                                      <x:String>Widowed</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="932, 761, 399, 58" CvType="InputBox" DesignTimeRectangle="933, 762, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='maritalStatus' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='maritalStatus' tag='SELECT' type='text' class='form-control uibank-input select-color ng-pristine ng-invalid ng-touched' aaname='' /&gt;" Guid="e5df846d-0959-4b71-abc9-d4f83b558bea" InformativeScreenshot="acea467f92fc636d800757fb562a7cdb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="932, 745, 75, 11" CvTextArgument="Marital Status" CvType="Text" DesignTimeRectangle="933, 743, 74, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Marital Status' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Marital Status' tag='LABEL' type='' class='uibank-label' check:innerText='Marital Status' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[CC(9).ToString().Equals(&quot;Casado&quot;)]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_10">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,266" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Marital Status'" sap:VirtualizedContainerService.HintSize="354,181" sap2010:WorkflowViewState.IdRef="NSelectItem_16" Item="Married" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="5">
+                                      <x:String>Select your marital status</x:String>
+                                      <x:String>Single</x:String>
+                                      <x:String>Married</x:String>
+                                      <x:String>Divorced</x:String>
+                                      <x:String>Widowed</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="932, 761, 399, 58" CvType="InputBox" DesignTimeRectangle="933, 762, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='maritalStatus' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='maritalStatus' tag='SELECT' type='text' class='form-control uibank-input select-color ng-pristine ng-invalid ng-touched' aaname='' /&gt;" Guid="e5df846d-0959-4b71-abc9-d4f83b558bea" InformativeScreenshot="acea467f92fc636d800757fb562a7cdb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="932, 745, 75, 11" CvTextArgument="Marital Status" CvType="Text" DesignTimeRectangle="933, 743, 74, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Marital Status' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Marital Status' tag='LABEL' type='' class='uibank-label' check:innerText='Marital Status' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                          <ui:IfElseIfBlock BlockType="ElseIf" Condition="[CC(9).ToString().Equals(&quot;Divorciado&quot;)]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_11">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,266" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Marital Status'" sap:VirtualizedContainerService.HintSize="354,181" sap2010:WorkflowViewState.IdRef="NSelectItem_17" Item="Divorced" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="5">
+                                      <x:String>Select your marital status</x:String>
+                                      <x:String>Single</x:String>
+                                      <x:String>Married</x:String>
+                                      <x:String>Divorced</x:String>
+                                      <x:String>Widowed</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="932, 761, 399, 58" CvType="InputBox" DesignTimeRectangle="933, 762, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='maritalStatus' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='maritalStatus' tag='SELECT' type='text' class='form-control uibank-input select-color ng-pristine ng-invalid ng-touched' aaname='' /&gt;" Guid="e5df846d-0959-4b71-abc9-d4f83b558bea" InformativeScreenshot="acea467f92fc636d800757fb562a7cdb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="932, 745, 75, 11" CvTextArgument="Marital Status" CvType="Text" DesignTimeRectangle="933, 743, 74, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Marital Status' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Marital Status' tag='LABEL' type='' class='uibank-label' check:innerText='Marital Status' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                          <ui:IfElseIfBlock BlockType="Else" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_12">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,266" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NSelectItem DisplayName="Select Item 'Marital Status'" sap:VirtualizedContainerService.HintSize="354,181" sap2010:WorkflowViewState.IdRef="NSelectItem_18" Item="Widowed" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                                  <uix:NSelectItem.Items>
+                                    <scg:List x:TypeArguments="x:String" Capacity="5">
+                                      <x:String>Select your marital status</x:String>
+                                      <x:String>Single</x:String>
+                                      <x:String>Married</x:String>
+                                      <x:String>Divorced</x:String>
+                                      <x:String>Widowed</x:String>
+                                    </scg:List>
+                                  </uix:NSelectItem.Items>
+                                  <uix:NSelectItem.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="932, 761, 399, 58" CvType="InputBox" DesignTimeRectangle="933, 762, 397, 54" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;webctrl id='maritalStatus' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='maritalStatus' tag='SELECT' type='text' class='form-control uibank-input select-color ng-pristine ng-invalid ng-touched' aaname='' /&gt;" Guid="e5df846d-0959-4b71-abc9-d4f83b558bea" InformativeScreenshot="acea467f92fc636d800757fb562a7cdb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CvTextArea="932, 745, 75, 11" CvTextArgument="Marital Status" CvType="Text" DesignTimeRectangle="933, 743, 74, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Marital Status' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Marital Status' tag='LABEL' type='' class='uibank-label' check:innerText='Marital Status' /&gt;" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NSelectItem.Target>
+                                </uix:NSelectItem>
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                        </sc:BindingList>
+                      </ui:IfElseIf.ConditionBlocks>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:IfElseIf>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Number of Dependents'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1078,259" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Text="[CC(10).ToString()]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvTextArea="525, 878, 300, 15" CvTextArgument="How many dependents do you claim?" CvType="Text" DesignTimeRectangle="511, 860, 397, 54" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='numberOfDependents' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='numberOfDependents' tag='INPUT' type='number' class='form-control uibank-input ng-pristine ng-valid ng-touched' aaname='' /&gt;" Guid="c549df7f-a02b-4a4e-b5bc-0e0b495e8279" InformativeScreenshot="1cd6d8b2b9d2e6d35d6a31bd5d1773e9.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="510, 843, 129, 13" CvTextArgument="Number of Dependents" CvType="Text" DesignTimeRectangle="511, 841, 128, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Number of Dependents' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Number of Dependents' tag='LABEL' type='' class='uibank-label' check:innerText='Number of Dependents' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Username'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1078,259" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Text="[CC(2).ToString()+&quot;_&quot;+CC(4).ToString()]" Version="V3">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="932, 573, 400, 58" CvType="InputBox" DesignTimeRectangle="933, 575, 397, 54" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='username' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='username' tag='INPUT' type='text' class='form-control uibank-input ng-pristine ng-valid ng-touched' aaname='Username' /&gt;" Guid="cf2eaa42-be78-4172-a6e0-643df0d11c5e" InformativeScreenshot="9e4722a59c0c12d0db46f4d8b69abf95.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="932, 558, 57, 11" CvTextArgument="Username" CvType="Text" DesignTimeRectangle="933, 556, 56, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Username' tag='LABEL' type='' class='uibank-label' check:innerText='Username' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="1078,198" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="739, 692, 20, 20" CvType="CheckBox" DesignTimeRectangle="741, 694, 16, 16" DesignTimeScaleFactor="1" ElementType="CheckBox" FullSelectorArgument="&lt;webctrl id='agreeCheckbox' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='agreeCheckbox' tag='INPUT' type='checkbox' class='form-check-input ng-untouched ng-pristine ng-valid' aaname=' I confirm that I agree to the Privacy Policy' /&gt;" Guid="753c2a2d-1369-4f4e-9890-23b734a24358" InformativeScreenshot="c6e4b7a190a30623b9feeb67435b75b0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArea="772, 695, 330, 19" CvTextArgument="I confirm that I agree to the Privacy Policy" CvType="Text" DesignTimeRectangle="773, 692, 328, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl aaname=' I confirm that I agree to the ' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname=' I confirm that I agree to the ' tag='LABEL' type='' class='form-check-label text-center' check:innerText='I confirm that I agree to the Privacy Policy' /&gt;" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Register'" sap:VirtualizedContainerService.HintSize="1078,198" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account" CvElementArea="761, 750, 320, 50" CvTextArea="886, 765, 70, 20" CvTextArgument="Register" CvType="Button" DesignTimeRectangle="487, 718, 866, 82" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;app-register-landing&amp;gt;app-register&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div' idx='4' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='row justify-content-center' tag='DIV' aaname='' check:innerText='Register' /&gt;" Guid="fea0232b-bf43-47c4-82b6-c2a3961a02f3" InformativeScreenshot="028d6bfd22fa005b50df18c2280d34cd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvElementArea="761, 750, 320, 50" CvType="Button" DesignTimeRectangle="761, 750, 320, 50" ElementType="Button" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="1078,131" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                    <ui:ImageFound DisplayName="Image Exists 'chrome.exe  UiBank'" Found="[Excessao]" sap:VirtualizedContainerService.HintSize="1078,147" sap2010:WorkflowViewState.IdRef="ImageFound_1">
+                      <ui:ImageFound.Image>
+                        <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" Profile="Basic" TargetImageBase64="iVBORw0KGgoAAAANSUhEUgAAAbcAAAAzCAYAAAAUwUaRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAzNJREFUeF7t2Etu21gQBVCtxG5P7GECdDyyE3/kpPe/Bi+ELRp4wEOl+DGlUNTLGRxEdasEixNedO8eHx87AGjJb+X28PAAABcj9ljvo9w+Dg7//nh+6l72++7151u3//Wze/vvFwBsTt9Rr2/77nn/2j0duqvvsLrodn3QL/eHQus/f/n6pbu9u+1ubm666+trANicvqNu7+4OnfW1e/j++NFhfZeVktu9HJrv2/29MgPgYvUd9u/9t67vtKeX5273j1IDoBF9p31/+tHtsiUAXKqrqyvlBkB7lBsAzVFuADRHuQHQHOUGQHOUGwDNUW4ANEe5AdAc5QZAc5QbAM1RbgA0R7kB0BzlBkBzlBsAzVFuADRHuQHQHOUGQHOUGwDNUW4ANEe5AdAc5QZAc1Ypt/f39w9D85/0J/7Wmr+/t/bfW1N8tpafFViPcltgzd/fW/vvrSk+W8vPCqznLP9bcs0X2KW9LLPfe2nP8BktPxtwPsptY7Lfe2nP8BktPxtwPkeXW/ZyitnYXD7XWW1sX2dzbsbu4n4sG5vL5zqrje3jruyzz2WeUt9n35m7j7dxLtmU+J0i7sdue+UeIHPWchu7yQx9J8vmzlG2j9nQPHaTyW7GsjrP7qKpm7jP7kuW3WVZmTND38myMtfGdgC1s/+XW20oL+I+ux+7ibtMdhOzqXkqL7L9MVlt6T7m2d3crDa0j/nUXbYDiDZfbiWrzbmPc8yHZHcxm5rH8pLVsv2SrLZ0H/Psbm5WG9rHfO4dwJhNl9tn57GbmA/J7mI2NQ/lU/OxWW3pPubZ3dysNrSPeXaXZQBj/ppyy3aZ7CZmU/NQPjUfm9WW7mOe3c3NakP7mA/NdQYw5eTllr2Mltxk2dQ852bpfOxNls25mZvNuYniPrs/JoviTZmzbGgGmOPocuuVF1B5CcUX0thcPtf7Wr2Pd3HOsqG5ZHE/52ZsLp/rfa3eD93FXXYXs+ymzo/dL8miclPf1p/jXD5nyj1A5iTl9rfzwgXYFuV2AsoNYFuU2wkoN4BtUW4noNwAtkW5AdAc5QZAc5QbAM1RbgA0R7kB0BzlBkBzlBsAjbnu/gd+TE3jAZVC0wAAAABJRU5ErkJggg==" />
+                      </ui:ImageFound.Image>
+                      <ui:ImageFound.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="26ed3b74-6a57-4ce8-a7c7-27dc030b9f36">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </ui:ImageFound.Target>
+                    </ui:ImageFound>
+                    <ui:IfElseIf DisplayName="Verificando Sexo" sap:VirtualizedContainerService.HintSize="1078,93" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
+                      <ui:IfElseIf.ConditionBlocks>
+                        <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
+                          <ui:IfElseIfBlock BlockType="If" Condition="[Excessao]" sap2010:WorkflowViewState.IdRef="IfElseIfBlock_13">
+                            <ui:IfElseIfBlock.Then>
+                              <Sequence DisplayName="Corpo" sap:VirtualizedContainerService.HintSize="416,288" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="354,203" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                              </Sequence>
+                            </ui:IfElseIfBlock.Then>
+                          </ui:IfElseIfBlock>
+                        </sc:BindingList>
+                      </ui:IfElseIf.ConditionBlocks>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:IfElseIf>
+                    <uix:NCheckState DisplayName="Verificando CC" sap:VirtualizedContainerService.HintSize="1078,1011" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="dffdb87e-ce4e-43cf-bcfc-e5926a7770a4" Version="V3">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Destino aparece" sap:VirtualizedContainerService.HintSize="512,769" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="450,474" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="Contas.xlsx">
+                            <ui:ExcelApplicationScope.Body>
+                              <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:ExcelWriteCell Cell="[&quot;L&quot;+contador.ToString()]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="354,128" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_1" SheetName="CC" Text="Conta criada com Sucesso" />
+                                  <ui:ExcelWriteCell Cell="[&quot;M&quot;+contador.ToString()]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="354,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_3" SheetName="CC" Text="[Now.ToString(&quot;dd/MM/yyyy - HH:mm:ss&quot;)]" />
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ExcelApplicationScope.Body>
+                          </ui:ExcelApplicationScope>
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" Shortcuts="[d(hk)][d(alt)][k(Left)][u(alt)][u(hk)]" Version="V3" />
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Destino não aparece" sap:VirtualizedContainerService.HintSize="512,769" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="450,474" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_3" InstanceCachePeriod="3000" WorkbookPath="Contas.xlsx">
+                            <ui:ExcelApplicationScope.Body>
+                              <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Fazer" sap:VirtualizedContainerService.HintSize="416,324" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:ExcelWriteCell Cell="[&quot;L&quot;+contador.ToString()]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="354,128" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_2" SheetName="CC" Text="Nao foi possivel criar a conta" />
+                                  <ui:ExcelWriteCell Cell="[&quot;M&quot;+contador.ToString()]" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="354,111" sap2010:WorkflowViewState.IdRef="ExcelWriteCell_4" SheetName="CC" Text="[Now.ToString(&quot;dd/MM/yyyy - HH:mm:ss&quot;)]" />
+                                </Sequence>
+                              </ActivityAction>
+                            </ui:ExcelApplicationScope.Body>
+                          </ui:ExcelApplicationScope>
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="450,205" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][d(ctrl)]r[u(ctrl)][u(hk)]" Version="V3" />
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://uibank.uipath.com/register-account/success/Abelardo_Rossi" CvTextArea="672, 415, 511, 37" CvTextArgument="Welcome To The UiBank Family!" CvType="Text" DesignTimeRectangle="593, 412, 672, 39" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl tag='H2' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H2' type='' class='' aaname=' Welcome To The UiBank Family! ' check:innerText='Welcome To The UiBank Family!' /&gt;" Guid="b11dfabb-5b1e-4cb3-aa1d-f2e1180b7472" InformativeScreenshot="0159630410498363de91fc1c990d83f8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiBank' /&gt;" SearchSteps="FuzzySelector, CV" Version="V3" Visibility="Interactive" />
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEachRow.Body>
+            </ui:ForEachRow>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1358, -105, 1858, 1004" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAAJkAAACZCAMAAAALgmiIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABgUExURfpGFv/////5+P/z8P7u6f7o4v7i2v7c0/7WzP7Rxf3Lvf3Ftv2/r/25p/2zoPyumfyokfyiiv2dhP2XfPyMbvyGZvyAX/x6WPx1UftvSftpQvtjO/tdM/tXLPpSJfpMHehXRNgAAAMzSURBVHhe7Ztrd6IwEIbBO+utrlXxVv//vyzgi5CZRJpzks3u2ff50nZCmUcISYQh2/2tZIQQQgghpGKP1VECPqHgYJono4CCA5pZoJk/NPOHZv7QzB+a+ZPcbFyM8Jsgrdnm1GQ5bfB3n5RmszOyZNl5hlhHQrPNA0kaPhB9kc5sbohl2QLxlmRmowtStFzFlZDM7AMZOsT5TGbW9f6WG1pAMrMvZOhhJktlNkGCPgXanniZLQqTMeIuZtiupTdo2fKu0fbEy+yGaIv5ITXyy+wn4hVzhPr8QtuTVGa5GM1qzBEtmZkczrLsyxzQkpntEes4oAUkMxvLnX1N0AKSmanM5pWZ0kzMT+JcJjXLF1fEq5nJHDFqUprlo+2xlrset5YVd1Kzhjl+StKbuaBZA81oZue/NBvSplkDzWhmh2YVNGugGc0AzRpoRjM7NKugWQPNaAZo1kAzmtkxzbr790/kYw/JnzMrEW3xNdsj3hDU7Ihoyw5xF/KTGNsHNZM78zUzyn+CmsmX2+TOJG/7ZVAzWf1xQdzBGJu9MK7loGZrRFsejtIxoPZtPCgParZE9IXradaTLbZ6YTz1DWqmTo8qzTJ4lr11mOU1Qc1UwcAVcSsTWfhg5g5rpgoGZNFYH3UyzYE5rJm8BPTT7w5VYCZ2FtZsinDHEi0a9WavqOIKa6ZWG9ndNXDMVHmNSB3YTFemXOwFVVP1GeThDWymT6ddzSImJ4zAZmq5UXFboa1jc0dbjy3aWkKb2erGsvOy39tGKzmT16gOGdrMUp1V8ziui2Kez4tiK0d+IA9ZeDM1d/6Mh+qNwc3UcvBnqEMWwWxi6d2DyLQV4c2G/sWGrHyuiWCm550hHrrGPo6Zd1ezTq5RzMaOkcHOQ4/ENVHM9G7fcHes4SKZWYroHVxEyeeLWGb5ylJEbOHg/HoVzSyf7Ifdyjd3i+KZVUudgd52fnsXK6ZZtfI4uI/byb0Qb4hrVrH4bVl9XPfGushKdLOKyWq3O5VlNZ/eyvK4261dl6PBEm/Et8hDHMIsDjTzh2b+0MwfmvlDM39o5g/N/KGZP/+s2blMhv3mJiGEEEIGybJvLix2/tJuKyAAAAAASUVORK5CYII=" InformativeScreenshot="51a64509a850e7f3aacfeedf71874628.jpg" Selector="&lt;html app='chrome.exe' title='Banco Ui' /&gt;" Title="Banco Ui" Url="https://uibank.uipath.com/register-account" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

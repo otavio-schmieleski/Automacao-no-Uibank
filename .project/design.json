@@ -1,0 +1,9 @@
+{
+  "Tags": [
+    {
+      "Key": "Automação de criação de contas no site uibank, lendo os dados do excel e fazendo tratamento dos dados e inserindo novas informações por dados"
+    }
+  ],
+  "SeparateRuntimeDependencies": true,
+  "IncludeSources": true
+}
